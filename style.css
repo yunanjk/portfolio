@@ -1,6 +1,160 @@
 @font-face {
-    font-family: 'KOFIHDrLEEJWTTF-B';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/KOFIHDrLEEJWTTF-B.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: rgb(160, 160, 160);
+    --color-pink: pink;
+
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    --size-border-radius: 4px;
+
+    --animation-duration: 300ms;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Happiness-Sans-Title', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: pink;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+h1 {
+    font-size: var(--font-large);
+    font-weight: bold;
+    color: var(--color-black);
+    margin: 16px 0px;
+}
+
+h2 {
+    font-size: var(--font-medium);
+    color: var(--color-black);
+    margin: 8px 0px;
+}
+
+h3 {
+    font-size: var(--font-regular);
+    color: var(--color-black);
+    margin: 8px 0px;
+}
+
+p {
+    font-size: var(--font-regular);
+    color: var(--color-black);
+    margin: 4px 0px;
+}
+
+/* navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--color-gray);
+}
+
+.navbar__logo {
+    font-size: var(--font-medium);
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.navbar__menu {
+    display: flex;
+}
+
+.navbar__menu__item {
+    padding: 8px 12px;
+    margin: 0 4px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.navbar__menu__item.active {
+    border: 1px solid white;
+    border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item:hover {
+    background-color: var(--color-pink);
+    border-radius: var(--size-border-radius);
+}
+
+.navbar__toggle-btn {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
+
+/* home */
+
+#home {
+    background: url(./images/background2.png) center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+
+.home__avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid var(--color-pink);
+}
+
+.home__title, .home__description {
+    color: var(--color-pink);
+}
+
+.home__contact {
+    color: var(--color-white);
+    font-size: var(--font-regular);
+    font-weight: bold;
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-pink);
+    border-radius: var(--size-border-radius);
+}
+
+
+
+
+
+
+
+
