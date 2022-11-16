@@ -10,25 +10,22 @@
     <link rel="icon" type="image/png" href="./images/rabbit-removebg.png">
     <script src="https://kit.fontawesome.com/a1a1ae8b99.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- NavBar 시작 -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <!-- <i class="fa-solid fa-o"></i>
-            <i class="fa-solid fa-y"></i>
-            <i class="fa-solid fa-y"></i> -->
             <i class="fa-regular fa-face-smile"></i>
             <a href="#">yunyeong</a>
         </div>
         <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About Me</li>
-            <li class="navbar__menu__item">Skill</li>
-            <!-- <li class="navbar__menu__item">Career</li> -->
-            <li class="navbar__menu__item">Work</li>
-            <li class="navbar__menu__item">Testimonials</li>
-            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About Me</li>
+            <li class="navbar__menu__item" data-link="#skills">Skill</li>
+            <li class="navbar__menu__item" data-link="#work">Work</li>
+            <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
         <!-- Button 시작 -->
         <button class="navbar__toggle-btn">
@@ -44,7 +41,7 @@
             <img src="./images/yunyeong.png" alt="yunyeong photo" class="home__avatar">
             <h1 class="home__title">안녕하세요. 저는 오윤영입니다!</h1>
             <h2 class="home__description">경기도 파주시에 거주하고 있습니다. 세계에서 짱먹는 개발자가 될 예정입니다!</h2>
-            <button class="home__contact">연락주세요!</button>
+            <button class="home__contact" data-link="#callme">연락주세요!</button>
         </div>
     </section>
     <!-- 홈 시작 -->
@@ -212,84 +209,84 @@
             <h1>내 작업실</h1>
             <h3>프로젝트</h3>
             <div class="work__categories">
-                <button class="category__btn">
+                <button class="category__btn selected" data-filter="*">
                     전체 <span class="category__count">10</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="front-end">
                     프론트엔드 <span class="category__count">5</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="back-end">
                     백엔드 <span class="category__count">3</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="mobile">
                     모바일 <span class="category__count">2</span>
                 </button>
             </div>
             <div class="work__projects">
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="mobile">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>유튜브 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a>
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>에어비앤비 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>제주항공 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>진에어 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="mobile">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>배달의 민족 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="back-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>마켓컬리 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="back-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>트리플 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="back-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>써브웨이 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>씨지브이 클론 코딩</h3>
                         <span>클론코딩 아주 똑같음</span>
                     </div>
                 </a> 
-                <a href="" class="project" target="_blank">
+                <a href="" class="project" target="_blank" data-type="front-end">
                     <img src="./images/subway.jpeg" alt="" class="project__img">
                     <div class="project__description">
                         <h3>여기어때 클론 코딩</h3>
@@ -348,7 +345,7 @@
     </section>
     <!-- Contact 끝 -->
 
-    <button class="arrow-up">
+    <button class="arrow-up"  data-link="#arrowup">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 </body>
